@@ -2,9 +2,7 @@ import React from 'react';
 import { Container } from './styles';
 import { Header } from '../../components/Header';
 
-
-
-export function FaleConosco(){
+export function FaleConosco() {
   return (
     <Container>
       <Header />
@@ -28,5 +26,3 @@ export function FaleConosco(){
     </Container>
   );
 };
-
-
