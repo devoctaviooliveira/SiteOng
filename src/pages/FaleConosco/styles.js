@@ -8,29 +8,39 @@ export const Container = styled.div`
   overflow: hidden;
 
   h1 {
-    color:black; 
+    color: Navy;
+    font-size: 2.5rem;
+    margin-top: 95px;
+    margin-bottom: 20px;
+    margin-left: 70rem;
+    font-family: "Roboto Slab";
   }
 
   p {
-    color:black; 
+    color: MidnightBlue;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-left: 50rem;
+    font-family: "Poppins";
   }
 
   form {
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente no formulário */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
     width: 100%;
     max-width: 500px;
-    margin-left:92rem;
+    margin-left: 53.9rem;
+    margin-top: 4rem;
 
     div {
-      margin-bottom: 10px;
+      margin-bottom: 13px;
     }
 
     label {
-      color: #fff; /* Cor do label em branco */
+      color: #fff;
       display: block;
-      margin-bottom: 6px;
+      margin-bottom: 9px;
     }
 
     input, textarea {
@@ -42,7 +52,7 @@ export const Container = styled.div`
 
     button {
       padding: 10px 40px;
-      background-color: #00aaff;
+      background-color: #1E90FF;
       color: #fff;
       border: none;
       border-radius: 5px;
@@ -50,29 +60,40 @@ export const Container = styled.div`
     }
 
     button:hover {
-      background-color: #0077cc;
+      background-color: #4169E1;
     }
   }
-  h1 {
-  font-size: 2.5rem; 
-  margin-top: 95px; /* Espaçamento acima do h1 */
-  margin-bottom: 20px;
-  margin-left: 110rem; 
-}
 
-p {
-  font-size: 2rem; 
-  margin-bottom: 15px; 
-  margin-left:95rem;
-}
+  .image-container {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    object-fit: cover;
+  }
 
-.image-container {
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  height:100vh;
-  object-fit: cover;
-}
+  /* Responsividade para dispositivos móveis */
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.8rem;
+      margin-left: 1rem;
+      text-align: center;
+    }
 
+    p {
+      font-size: 1.2rem;
+      margin-left: 1rem;
+      text-align: center;
+    }
+
+    form {
+      margin-left: 0; /* Centraliza o form */
+      margin-top: 2rem;
+      padding: 15px;
+    }
+
+    .image-container {
+      display: none; /* Oculta a imagem de fundo no mobile, se necessário */
+    }
+  }
 `;
-

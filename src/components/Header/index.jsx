@@ -15,7 +15,7 @@ export function Header() {
         <a href="/about">Sobre nós</a>
         <a href="/adopt">Adote</a>
         <a href="/donate">Contribua</a>
-        <a href="">Fale conosco</a>
+        <a href="/fale-conosco">Fale conosco</a>
       </Links>
 
       <Button>
