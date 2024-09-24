@@ -19,6 +19,7 @@ export const Grid = styled.div`
   gap: 1rem;
   padding: 1rem;
   
+  
   img {
     border-radius: 2rem;
     border: 2px solid white;
