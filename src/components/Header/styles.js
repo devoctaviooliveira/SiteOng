@@ -22,6 +22,7 @@ export const Links = styled.div `
     color: #1F70B5;
 
     position: relative;
+    font-family: "Poppins";
   }
 
   a::before {
@@ -30,7 +31,7 @@ export const Links = styled.div `
     width: 100%;
     height: 2px;
     border-radius: 4px;
-    background-color: black;
+    background-color: rgba(31, 112, 181, 0.50);
     bottom: 0;
     left: 0;
     transform-origin: right;
