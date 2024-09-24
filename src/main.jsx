@@ -5,12 +5,13 @@ import { Homepage } from './pages/Homepage/index.jsx'
 import { StandardButton } from './components/StandardButton/index.jsx'
 import { EventsCard } from './components/EventsCard/index.jsx'
 import { Eventos } from './pages/Eventos/index.jsx'
+import { FaleConosco } from './pages/FaleConosco/index.jsx'
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <GlobalStyles/>
-    <Eventos />
+    <FaleConosco />
   </StrictMode>,
 )
