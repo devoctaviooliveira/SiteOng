@@ -1,23 +1,36 @@
 import styled from "styled-components";
 
-export const Container = styled.div `
+export const Container = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-`
 
-export const Grid = styled.div `
+  @media (max-width: 430px) { /* iPhone 14 Pro Max width */
+    height: auto;
+    padding: 1rem;
+  }
+`;
+
+export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
-
+  padding: 1rem;
+  
   img {
     border-radius: 2rem;
     border: 2px solid white;
+    width: 100%;
+    height: auto;
   }
-`
+
+  @media (max-width: 430px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+`;
 
 export const MainContent = styled.div`
   display: flex;
@@ -25,9 +38,15 @@ export const MainContent = styled.div`
   align-items: center;
   padding: 3.4rem;
   border-radius: 2rem;
-  background-color: rgba(31, 112, 181, 0.50);
+  
   margin: auto;
-`
+
+  @media (max-width: 430px) {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+`;
 
 export const TextContent = styled.div`
   display: flex;
@@ -37,7 +56,7 @@ export const TextContent = styled.div`
   h1 {
     font-size: 3.6rem;
     max-width: 62rem;
-    color: white;
+    color: black;
     font-family: "Roboto Slab";
   }
 
@@ -47,4 +66,11 @@ export const TextContent = styled.div`
     font-weight: bold;
     font-family: "Roboto Slab";
   }
-`
+
+  @media (max-width: 430px) {
+    h1 {
+      font-size: 1.5rem;
+      
+    }
+  }
+`;
