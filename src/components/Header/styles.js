@@ -49,3 +49,7 @@ export const Links = styled.div `
 export const Button = styled.div `
   justify-content: right;
 `
+
+export const HomeButton = styled.button `
+  
+`
