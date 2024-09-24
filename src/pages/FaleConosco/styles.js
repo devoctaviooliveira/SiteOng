@@ -1,22 +1,18 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-image: url('/path-to-your-image/fundofale.png'); /* Caminho para sua imagem fundofale.png */
-  background-size: cover; /* Ajusta a imagem para cobrir toda a área */
-  background-position: center; /* Centraliza a imagem */
-  min-height: 100vh; /* Garante que o container ocupe toda a altura da tela */
+  height: 100vh;
+  z-index: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+  overflow: hidden;
 
   h1 {
-    color: #fff; /* Cor do título em branco para contraste com o fundo */
+    color:black; 
   }
 
   p {
-    color: #fff; /* Cor do texto em branco */
+    color:black; 
   }
 
   form {
@@ -25,15 +21,16 @@ export const Container = styled.div`
     border-radius: 10px;
     width: 100%;
     max-width: 500px;
+    margin-left:92rem;
 
     div {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     label {
       color: #fff; /* Cor do label em branco */
       display: block;
-      margin-bottom: 5px;
+      margin-bottom: 6px;
     }
 
     input, textarea {
@@ -44,7 +41,7 @@ export const Container = styled.div`
     }
 
     button {
-      padding: 10px 20px;
+      padding: 10px 40px;
       background-color: #00aaff;
       color: #fff;
       border: none;
@@ -56,4 +53,26 @@ export const Container = styled.div`
       background-color: #0077cc;
     }
   }
+  h1 {
+  font-size: 2.5rem; 
+  margin-top: 95px; /* Espaçamento acima do h1 */
+  margin-bottom: 20px;
+  margin-left: 110rem; 
+}
+
+p {
+  font-size: 2rem; 
+  margin-bottom: 15px; 
+  margin-left:95rem;
+}
+
+.image-container {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  height:100vh;
+  object-fit: cover;
+}
+
 `;
+
