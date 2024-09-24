@@ -16,7 +16,7 @@ export function Header() {
       </Links>
 
       <Button>
-        <StandardButton className='WhatsAppButton'/>
+        <StandardButton className='WhatsAppButton' title="WhatsApp"/>
       </Button>
     </Container>
   )

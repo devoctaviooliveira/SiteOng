@@ -1,9 +1,9 @@
 import { Container } from "./styles";
 
-export function StandardButton({className}) {
+export function StandardButton({className, title}) {
   return(
     <Container className={className}>
-      <p>WhatsApp</p>
+      <p>{title}</p>
     </Container>
   )
 }
