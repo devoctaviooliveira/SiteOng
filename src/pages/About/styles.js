@@ -5,9 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 430px) { /* iPhone 14 Pro Max width */
-    height: auto;
-  }
+  overflow: hidden;
 `;
 
 export const MainContent = styled.div`
@@ -19,10 +17,10 @@ export const MainContent = styled.div`
 
   .Button {
     width: 20rem;
+  }
+
+  @media (max-width: 600px) {
     
-    @media (max-width: 430px) {
-      width: 50%; /* Botão ocupa toda a largura em mobile */
-    }
   }
 `;
 
@@ -30,10 +28,11 @@ export const TextContent = styled.div`
   display: flex;
   gap: 6rem;
 
-  @media (max-width: 430px) {
-    flex-direction: column; /* Muda para coluna em dispositivos móveis */
-    align-items: center; /* Centraliza os itens */
-    gap: 1.2rem; /* Reduz o espaço entre os itens */
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    gap: 4rem;
   }
 `;
 
@@ -43,13 +42,17 @@ export const ImgContent = styled.div`
 
   img {
     border-radius: 2rem;
-    width: 100%; /* Imagem ocupa toda a largura disponível */
-    height: auto; /* Mantém a proporção da imagem */
   }
 
-  @media (max-width: 430px) {
-    flex-direction: column; /* Alinha imagens em coluna em mobile */
-    gap: 1rem; /* Reduz o espaço entre as imagens */
+  @media (max-width: 600px) {
+    .IMG1 {
+      width: 100%;
+      border-radius: 0;
+    }
+
+    .IMG2 {
+      display: none;
+    }
   }
 `;
 
@@ -58,12 +61,8 @@ export const FirstText = styled.div`
   max-width: 84rem;
   text-align: justify;
 
-  @media (max-width: 430px) {
-    margin-top: 5rem;
-    font-size: 1.3rem; /* Ajusta o tamanho da fonte em mobile */
-    max-width: 100%; 
-    font-family: "Roboto Slab";
-    padding: 0 1rem; /* Adiciona padding para evitar que o texto encoste nas bordas */
+  @media (max-width: 600px) {
+    font-size: 2.4rem;
   }
 `;
 
@@ -73,17 +72,14 @@ export const SecondText = styled.div`
 
   h1 {
     font-size: 9.6rem;
-    
-    @media (max-width: 430px) {
-      font-size: 5.6rem; /* Ajusta o tamanho do título em mobile */
-    }
   }
 
   p {
     font-size: 2.4rem;
-    
-    @media (max-width: 430px) {
-      font-size: 2rem; /* Ajusta o tamanho do parágrafo em mobile */
-    }
+  }
+
+
+  @media (max-width: 600px) {
+    justify-content: space-between;
   }
 `;

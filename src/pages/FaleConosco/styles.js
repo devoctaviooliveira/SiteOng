@@ -2,24 +2,21 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   height: 100vh;
-  z-index: 0;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+`;
+
+export const MainContent = styled.div`
+  margin: auto;
 
   h1 {
     color: Navy;
-    font-size: 2.5rem;
-    margin-top: 95px;
-    margin-bottom: 20px;
-    margin-left: 70rem;
+    font-size: 2.4rem;
     font-family: "Roboto Slab";
   }
 
   p {
-    color: MidnightBlue;
+    color: Navy;
     font-size: 2rem;
-    margin-bottom: 15px;
+    margin-bottom: 1.6rem;
     margin-left: 50rem;
     font-family: "Poppins";
   }
@@ -68,12 +65,13 @@ export const Container = styled.div`
     z-index: -1;
     position: fixed;
     top: 0;
+    left: 0;
     height: 100vh;
     object-fit: cover;
   }
 
-  /* Responsividade para dispositivos móveis */
-  @media only screen and (max-width: 768px) {
+  
+  @media only screen and (max-width: 600px) {
     h1 {
       font-size: 1.8rem;
       margin-left: 1rem;
@@ -96,4 +94,4 @@ export const Container = styled.div`
       display: none; /* Oculta a imagem de fundo no mobile, se necessário */
     }
   }
-`;
+`

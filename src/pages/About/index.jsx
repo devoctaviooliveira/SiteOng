@@ -35,8 +35,8 @@ export function About() {
         <StandardButton title="Visite nosso Instagram" className="Button"/>
 
         <ImgContent>
-          <img src={AboutImg1} alt="Imagem de um cachorro" />
-          <img src={AboutImg2} alt="Imagem de um cachorro" />
+          <img className="IMG1" src={AboutImg1} alt="Imagem de um cachorro" />
+          <img className="IMG2" src={AboutImg2} alt="Imagem de um cachorro" />
         </ImgContent>
       </MainContent>
     </Container>

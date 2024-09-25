@@ -5,11 +5,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @media (max-width: 430px) { /* iPhone 14 Pro Max width */
-    height: auto;
-    padding: 1rem;
-  }
 `;
 
 export const Grid = styled.div`
@@ -27,7 +22,7 @@ export const Grid = styled.div`
     height: auto;
   }
 
-  @media (max-width: 430px) {
+  @media (max-width: 600px) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
@@ -42,10 +37,10 @@ export const MainContent = styled.div`
   
   margin: auto;
 
-  @media (max-width: 430px) {
+  @media (max-width: 600px) {
     flex-direction: column;
     gap: 2rem;
-    padding: 1.5rem;
+    padding: 1.6rem;
   }
 `;
 
@@ -68,10 +63,12 @@ export const TextContent = styled.div`
     font-family: "Roboto Slab";
   }
 
-  @media (max-width: 430px) {
+  @media (max-width: 600px) {
+    align-items: center;
+    text-align: center;
+
     h1 {
-      font-size: 1.5rem;
-      
+      font-size: 2.4rem;
     }
   }
 `;
