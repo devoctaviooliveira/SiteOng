@@ -57,12 +57,13 @@ export const ImgContent = styled.div`
 `;
 
 export const FirstText = styled.div`
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   max-width: 84rem;
   text-align: justify;
+  font-family: Poppins;
 
   @media (max-width: 600px) {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
 `;
 

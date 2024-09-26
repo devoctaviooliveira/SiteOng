@@ -5,72 +5,77 @@ export const Container = styled.div`
 `;
 
 export const MainContent = styled.div`
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  
 
   h1 {
-    color: Navy;
-    font-size: 2.4rem;
+    color: #1F70B5;
+    font-size: 3.6rem;
     font-family: "Roboto Slab";
-  }
-
-  p {
-    color: Navy;
-    font-size: 2rem;
-    margin-bottom: 1.6rem;
-    margin-left: 50rem;
-    font-family: "Poppins";
-  }
-
-  form {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 500px;
-    margin-left: 53.9rem;
     margin-top: 4rem;
 
-    div {
-      margin-bottom: 13px;
-    }
-
-    label {
-      color: #fff;
-      display: block;
-      margin-bottom: 9px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-    }
-
-    button {
-      padding: 10px 40px;
-      background-color: #1E90FF;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #4169E1;
+    @media (max-width: 600px) {
+      text-align: center;
     }
   }
 
-  .image-container {
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    object-fit: cover;
+  @media (max-width: 600px) {
+    padding: 2rem;
+  }
+`
+
+export const Form = styled.form`
+  background-color: rgba(31, 112, 181, 0.60);
+  padding: 2rem;
+  border-radius: 2rem;
+  width: 54rem;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+
+
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  label {
+    color: #fff;
+    display: block;
+    font-family: Poppins;
+    font-size: 1.6rem;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 1rem 4rem;
+    margin-top: 1rem;
+    background-color: #1E90FF;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: 1.6rem;
+  }
+
+  button:hover {
+    background-color: #4169E1;
   }
 
   
+
   @media only screen and (max-width: 600px) {
     h1 {
       font-size: 1.8rem;
@@ -82,16 +87,6 @@ export const MainContent = styled.div`
       font-size: 1.2rem;
       margin-left: 1rem;
       text-align: center;
-    }
-
-    form {
-      margin-left: 0; /* Centraliza o form */
-      margin-top: 2rem;
-      padding: 15px;
-    }
-
-    .image-container {
-      display: none; /* Oculta a imagem de fundo no mobile, se necessário */
     }
   }
 `

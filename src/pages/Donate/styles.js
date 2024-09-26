@@ -29,6 +29,7 @@ export const TextContent = styled.div`
     text-align: center;
     font-weight: bold;
     color: #1F70B5;
+    font-family: Roboto Slabb;
 
     @media (max-width: 600px) {
       font-size: 4.8rem; 
@@ -40,6 +41,7 @@ export const TextContent = styled.div`
     font-style: normal;
     font-weight: 200;
     line-height: 180%;
+    font-family: Poppins;
 
     @media (max-width: 600px) {
       font-size: 2.4rem; 

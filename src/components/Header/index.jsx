@@ -26,9 +26,11 @@ export function Header() {
         <a className="DesktopVersion" href="/fale-conosco">Fale conosco</a>
       </Links>
 
-      <Button>
-        <StandardButton className='WhatsAppButton' title="WhatsApp" />
-      </Button>
+      <a href="https://web.whatsapp.com/send?phone=5512 99159-8007" target='_blank'>
+        <Button>
+          <StandardButton className='WhatsAppButton' title="WhatsApp" />
+        </Button>
+      </a>
 
       <DropDownMenu onClick={toggleMenu}>
         <IoMdMenu className="Icon" />

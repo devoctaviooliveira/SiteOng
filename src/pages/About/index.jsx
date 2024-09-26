@@ -32,7 +32,8 @@ export function About() {
           </SecondText>
         </TextContent>
 
-        <StandardButton title="Visite nosso Instagram" className="Button"/>
+        <a href="https://www.instagram.com/institutomarilugodoi/" target="_blank"><StandardButton title="Visite nosso Instagram" className="Button"/></a>
+        
 
         <ImgContent>
           <img className="IMG1" src={AboutImg1} alt="Imagem de um cachorro" />

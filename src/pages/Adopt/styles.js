@@ -17,7 +17,7 @@ export const Grid = styled.div`
   
   img {
     border-radius: 2rem;
-    border: 2px solid white;
+    border: 2px solid #1F70B5;
     width: 100%;
     height: auto;
   }

@@ -19,10 +19,12 @@ export const Container = styled.div `
 
   h1 {
     color: #1F70B5;
+    font-family: Roboto Slab;
   }
 
   p {
     font-size: 1.6rem;
     text-align: center;
+    font-family: Poppins;
   }
 `

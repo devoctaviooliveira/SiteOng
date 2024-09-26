@@ -71,7 +71,7 @@ export const DropDownMenu = styled.button `
   .Icon {
     width: 3.4rem;
     height: 3.4rem;
-    color: #1F3DB5;
+    color: #1F70B5;
   }
 
   @media (min-width: 600px) {
@@ -88,6 +88,9 @@ export const MobileLinks = styled.div`
   right: 0;
   width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 2.4rem;
+  font-family: Poppins;
+  
 
   a {
     padding: 10px;
@@ -95,6 +98,7 @@ export const MobileLinks = styled.div`
     border-bottom: 1px solid #ddd;
     color: #333;
     text-decoration: none;
+    color: #1F70B5;
 
     &:last-child {
       border-bottom: none;
